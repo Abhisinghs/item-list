@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-red-400 from-10% via-sky-300 via-30% to-red-300 to-90%">
+    <header id="main-header" class="bg-sky-300 text-white p-4 mb-3">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-1/2">
+                    <h1 id="header-title" class="text-2xl font-bold">Item Lister</h1>
+                </div>
+                <div class="w-1/2 flex items-center">
+                    <input type="text" class="text-xs text-black font-light form-control p-1 pl-2 border rounded w-full" id="filter"
+                        placeholder="Search Items...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="w-80 container mx-auto mb-4">
+        <div id="main" class="bg-sky-200 shadow rounded-lg p-4">
+            <h2 class="text-xl font-medium mb-2">Add Items</h2>
+            <form id="addForm" class="flex mb-3">
+                <input type="text" class=" text-xs form-control border rounded p-2 mr-2 flex-1" id="item"
+                    placeholder="Add new item">
+                <input type="submit" class="text-xs bg-blue-600 text-white rounded p-2" value="Submit">
+            </form>
+            <h2 class="text-lg font-medium mb-2">Items</h2>
+            <ul id="items" class="list-none">
+                <li class="text-xs flex justify-between items-center  border-gray-300 border-b bg-white px-4 py-2">Item 1 <button
+                        class="bg-red-600 text-white  text-xs rounded p-1 delete">X</button></li>
+                <li class="text-xs flex justify-between items-center border-gray-300 border-b bg-white px-4 py-2">Item 2 <button
+                        class="bg-red-600 text-white text-xs rounded p-1 delete">X</button></li>
+                <li class="text-xs flex justify-between items-center border-gray-300 border-b bg-white px-4 py-2">Item 3 <button
+                        class="bg-red-600 text-white text-xs rounded p-1 delete">X</button></li>
+                <li class="text-xs flex justify-between items-center border-gray-300 border-b bg-white px-4 py-2">Item 4 <button
+                        class="bg-red-600 text-white text-xs rounded p-1 delete">X</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
